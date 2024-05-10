@@ -1,0 +1,476 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background-color: #F1F6FA
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #002B4E;
+  position: fixed; /* Tetapkan posisi navbar ke fixed */
+  width: 100%; /* Gunakan lebar 100% */
+  top: 0; /* Tempatkan navbar di bagian atas */
+  z-index: 1000; /* Tetapkan z-index untuk menempatkan navbar di atas konten lain */
+  
+} 
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  background-color: #C65BCF;
+  color: #002B4E;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+      display: none;
+  }
+
+  .topnav a.icon {
+      float: right;
+      display: block;
+  }
+
+  .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+  }
+
+  .topnav input[type=text] {
+      border: 1px solid #002B4E;
+  }
+
+  .topnav.responsive {
+      position: relative;
+  }
+
+  .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+
+  .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+}
+
+.jumbotron1 {
+  display: flex;
+  justify-content: center; /* Mengatur agar konten berada di tengah secara horizontal */
+  align-items: center; /* Mengatur agar konten berada di tengah secara vertikal */
+  position: relative;
+  background-image: url('./img/bag ny.png');
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.jumbotron1 > * {
+  max-width: 100%; /* Mengatur agar elemen-elemen di dalam .jumbotron1 tidak melebihi lebar layar */
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); 
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  color: white; 
+}
+
+.jumbotron1 img{
+  display: flex;
+  margin-bottom: 20px;
+  float: left; /* Mengatur gambar agar berada di sebelah kiri */
+  margin-right: 130px; /* Memberi jarak antara gambar dan teks */ 
+  margin-left: 150px;
+}
+
+.jumbotron1 p1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 70px;
+  margin-left: 100px;
+  font-size: 40px;
+}
+
+.jumbotron1 p2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 150px;
+  font-size: 15px;
+}
+
+.jumbotron1 .button-container {
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 760px;
+}
+
+.jumbotron1 .btn {
+  display: inline-block;
+  padding: 10px 60px;
+  background-color: #002B4E;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+}
+
+.jumbotron1 .btn:hover {
+  background-color: #C65BCF;
+  color: #002B4E;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+.container1 {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.container1 img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  border-radius: 20px;
+  
+}
+
+.container1 p1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.container1 p2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.container1 .button-container {
+  margin-top: 90px;
+}
+
+.container1 .btn {
+  display: inline-block;
+  padding: 10px 120px;
+  background-color: #002B4E;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+}
+
+.container1 .btn:hover {
+  background-color: #C65BCF;
+  color: #002B4E;
+}
+
+.sales {
+  display: flex;
+  justify-content: center;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center; /* Mengatur agar konten berada di tengah secara horizontal */
+  align-items: center; /* Mengatur agar konten berada di tengah secara vertikal */
+  position: relative;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container2 img{
+  display: flex;
+  margin-bottom: 20px;
+  float: left;
+  margin-right: 90px;
+  margin-left: 150px;
+  border-radius: 20px;
+  margin-top: 150px;
+  
+}
+
+.container2 h1{
+  position: absolute;
+  z-index: 1;
+  color: #002B4E;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 600px;
+}
+
+.container2 p1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 150px;
+  margin-left: 0;
+  font-size: 30px;
+}
+
+.container2 p2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 0;
+  margin-right: 150px;
+  font-size: 15px;
+}
+
+.container2 .button-container {
+  margin-top: 70px;
+  margin-left: 0;
+}
+
+.container2 .btn {
+  display: inline-block;
+  padding: 10px 225px;
+  background-color: #002B4E;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+}
+
+.container2 .btn:hover {
+  background-color: #C65BCF;
+  color: #002B4E;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+}
+
+.container3 {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.container3 img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  border-radius: 20px;
+  
+}
+
+.container3 p1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.container3 p2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.container3 .button-container {
+  margin-top: 90px;
+}
+
+.container3 .btn {
+  display: inline-block;
+  padding: 10px 120px;
+  background-color: #002B4E;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+}
+
+.container3 .btn:hover {
+  background-color: #C65BCF;
+  color: #002B4E;
+}
+
+.suggestion {
+  display: flex;
+  justify-content: center;
+}
+
+.container4 {
+  display: flex;
+  justify-content: center; /* Mengatur agar konten berada di tengah secara horizontal */
+  align-items: center; /* Mengatur agar konten berada di tengah secara vertikal */
+  position: relative;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container4 .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container4 .custom-card {
+  width: 1000px; /* Sesuaikan lebar kartu sesuai kebutuhan */
+  margin: 20px; /* Sesuaikan margin antara kartu */
+  background-color: #002B4E; /* Warna latar belakang kartu */
+  border-radius: 10px; /* Corner radius kartu */
+  box-shadow: 0 4px 6px #002B4E; /* Shadow kartu */
+}
+
+.container4 .custom-card-body {
+  padding: 20px; /* Padding isi kartu */
+}
+
+.container4 .custom-card img {
+  display: flex;
+  margin-bottom: 20px;
+  float: left; /* Mengatur gambar agar berada di sebelah kiri */
+  margin-right: 130px; /* Memberi jarak antara gambar dan teks */ 
+  margin-left: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.container4 .custom-card h1{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 70px;
+  margin-left: 100px;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.container4 .custom-card p {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 150px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.container4 .custom-card .button-container {
+  margin-top: 60px;
+  margin-right: 195.5px;
+}
+
+.container4 .custom-card .btn {
+  display: inline-block;
+  padding: 10px 120px;
+  background-color: #ffffff;
+  color: #002B4E;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+}
+
+.container4 .custom-card .btn:hover {
+  background-color: #C65BCF;
+  color: #002B4E;
+}
+
+.maps {
+  background-color: #002B4E;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.maps-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.jumbotron6 {
+  color: #f2f2f2;
+}
+
+.jumbotron6 h1 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.jumbotron6 p2 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+

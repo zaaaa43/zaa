@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New York City Product</title>
+    <link rel="stylesheet" href="style product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- navbar start -->
+    <div class="topnav" id="myTopnav">
+        <a href="home.html">About Us</a>
+        <a href="sales.html">Sales</a>
+        <a href="produk.html">Product</a>
+        <a href="sugesstion.html">Suggestion</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <input type="text" placeholder="Search..">
+    </div>
+<!-- navbar end -->
+
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 2024 Built by. <a style="color: #C65BCF"><b>Semarang Team 10</b></a>.</p>
+    </footer>
+
+    <script>    
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }  
+    </script>
+
+</body>
+</html>
